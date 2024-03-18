@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiara Tatyanadewi Benjamin</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<body>
+
+    <!--header-->
+    <div class="media_social">
+        <div class="container">
+            <ul>
+                <li><a href="https://github.com/tiaratatyanadewi"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tiara-tatyanadewi-benjamin-a76a05232/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1> <a href="index.html">TIARA TATYANADEWI BENJAMIN</a></h1>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experiences">EXPERIENCES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--banner-->
+    <section class="banner">
+        <h2>"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</h2>
+    </section>
+
+    <!--about-->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>ABOUT</h3>
+            <p> Driven by the transformative potential of Robotics and Artificial Intelligence, 
+                I am a highly motivated 3rd-year student pursuing a Bachelor of Engineering in Robotics & AI Engineering at Airlangga University.  
+                Leveraging my experience in robot testing, I am eager to learn from industry leaders and contribute to impactful projects that shape the future of this dynamic field.
+            </p>
+        </div>
+    </section> 
+
+     <!--experiences-->
+     <section id="experiences" class="experiences">
+        <div class="container">
+            <h3>EXPERIENCES</h3>
+            <div class="box">
+                <div class="col-4">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <h4>ARDUINO</h4>
+                    <p> - Wall Following Robot</p>
+                    <p> - Mini Forklift Robot</p>
+                    <p> - Smart Fish Tank IoT system using ESP8266</p>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa-brands fa-python"></i></div>
+                    <h4>PYTHON</h4>
+                    <p> - Face mask detection using YOLOv8</p>
+                    <p> - Lung cancer detection using CNN</p>
+                    <p> - Stock price prediction using ARMA and ARMAX</p>
+                </div>
+                <div class="col-4">
+                    <div class="icon"><i class="fa fa-code" aria-hidden="true"></i></div>
+                    <h4>ROS</h4>
+                    <p> - Control quadrotor using Fuzzy PID Control and FNN </p>
+                    <p> - Obstacle avoidance for quadrotor </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="contact">
+        <section class="footer">
+            <div class="container">
+                <h3>CONTACT</h3>
+                <div class="box">
+                    <div class="col-5">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h4>E-MAIL</h4>
+                        <p><a href="mailto:tiara.tatyanadewi.benjamin-2021@ftmm.unair.ac.id"> tiara.tatyanadewi.benjamin-2021@ftmm.unair.ac.id </a></p>
+                    </div>
+                    <div class="col-5">
+                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <h4>LINKEDIN</h4>
+                        <p><a href="https://www.linkedin.com/in/tiara-tatyanadewi-benjamin-a76a05232/">Tiara Tatyanadewi Benjamin</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
+</html>
