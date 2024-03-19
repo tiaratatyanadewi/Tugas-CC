@@ -94,7 +94,7 @@ section h3 {
 }
 
 .box {
-    color: #a9b7d6;
+    color: black;
 }
 .box:after {
     content: '';
